@@ -1,0 +1,34 @@
+<!-- Hunter Piper, 11/25/26 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links our style sheet to our html file-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Links our JavaScript file -->
+    <script src="string.js"></script>
+    <title>Can you find me?</title>
+</head>
+<body>
+    <!--this displays our header telling the user that we they need to find our message-->
+    <h1>Find the Secret Message</h1>
+<div class="container">
+    <!-- Form element containing all input fields and the submit button -->
+    <form onsubmit="return validateForm()">
+        <!--First name input field-->
+        <input type="text" id="firstName" placeholder="First name" required>
+        <!--Last name input field-->
+        <input type="text" id="lastName" placeholder="Last name" required>
+        <!--Zip code input field-->
+        <input type="text" id="zipCode" placeholder="zip code" required>
+        <!--warning message area-->
+        <p class="warning" id="warningMessage"></p>
+        <!--submit button to check the inputs-->
+        <button id="button" type="submit">Submit</button>
+    </form>
+    <!--secret message displayed after successful validation-->
+    <p id="secretMessage" style="display: none;">You found me!!! Happy Holidays! </p>
+</div>
+</body>
+</html>
